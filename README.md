@@ -1,4 +1,4 @@
-Problema de matriz a resolver.
+# Problema de matriz a resolver.
 
 
 Hola David, acá te envío el ejercicio que te comenté.

@@ -26,15 +26,17 @@
 
 // 8-. para identificar si es par o impar simplemente creo un condicional if el cual preguntara el valor de la variable al que se le aplicara el modulo(%)
 // para ver su resultado, si este es igual a 0, seria par, ya que el resto de todo numero par es 0, en su defecto si el resultado de esa operacion no es 0 
-// seria impar, que significa que el resto de esa operacion fue distinto de 0. Luego de verificar que efectivamente funcionaba el condicional tome eso y lo
-// puse dentro de una funcion la cual me permitiria usarlo mas adelante en cualquier parte de una mejor manera y tambien mas limpia en cuanto a codigo.
+// seria impar, que significa que el resto de esa operacion fue distinto de 0. 
 
+// 9-. una vez determinado si el array es par o impar ahora se debe determinar cual es el valor central de dicho array de datos, para obtener estos datos
+// se debe saber el largo del array y despues divirlo en 2, de esta manera se obtiene un valor y ese valor se trunca a su valor entero para que este no sea
+// decimal, este resultado final seria la posicion del elemento central del array, a la cual finalmente se restaria si es que llegase a ser un array impar.
 
 // array contenedor de la matriz 5x5
 // reemplazar con la matriz que se desee obtener sus diagonales
 //     ↓↓↓
 const array = [[21,22,23,24,25],[20,7,8,9,10],[19,6,1,2,11],[18,5,4,3,12],[17,16,15,14,13]];
-// const array = [[21,22,23,24],[20,7,8,9],[19,6,1,2],[18,5,4,3]]; //este es un array par de ejemplo
+// const array = [[21,22,23,24],[20,7,8,9],[19,6,1,2],[18,5,4,3]]; //este es un array par sin numero central de ejemplo
 
 // inicializacion de variables
 let contador_positivo = 0;
@@ -64,7 +66,7 @@ let resultado = (valor_primera_diag + valor_segunda_diag);
 
 // determinaremos si el array es par o impar
 if(!((largo_array % 2) == 0)){
-    // resultado de las diagonales principales sumadas
+    // resultado de la suma de las diagonales restando el valor central al ser un array impar
     resultado = resultado - valor_central;
 }
 
